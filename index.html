@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fernando Fiore — Portfolio</title>
+  <meta name="description" content="Desarrollador Java/React. Experiencia con WildFly, Oracle y frontend moderno." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f172a; --card:#111827; --muted:#94a3b8; --text:#e5e7eb; --brand:#22d3ee; --accent:#a78bfa;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:linear-gradient(180deg,#0b1220, #0a0f1f 50%, #0b1020);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1000px;margin:auto;padding:24px}
+    header{display:grid;gap:10px;align-items:center;padding:28px 0;border-bottom:1px solid #1f2937}
+    .tag{display:inline-block;padding:4px 10px;border:1px solid #223047;border-radius:999px;font-size:12px;color:var(--muted)}
+    h1{font-size:42px;line-height:1.1;margin:8px 0 4px}
+    p.lead{color:var(--muted);max-width:70ch}
+    .grid{display:grid;gap:16px}
+    @media(min-width:900px){.grid-3{grid-template-columns:repeat(3,1fr)} .grid-2{grid-template-columns:repeat(2,1fr)}}
+    .card{background:rgba(17,24,39,.6);backdrop-filter:blur(6px);border:1px solid #233147;border-radius:16px;padding:18px}
+    .card h3{margin:0 0 8px;font-size:18px}
+    .pill{display:inline-block;margin:6px 6px 0 0;padding:6px 10px;border-radius:999px;background:#0b162b;border:1px solid #233147;color:#b7c3d7;font-size:12px}
+    .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid #233147;background:#0d1a30;color:#e7eefc}
+    .btn:hover{transform:translateY(-1px)}
+    section{padding:28px 0}
+    footer{border-top:1px solid #1f2937;color:#97a3b8;padding:24px 0;margin-top:24px;font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="tag">Disponible para proyectos • Uruguay</span>
+      <h1>Fernando Fiore</h1>
+      <p class="lead">
+        Desarrollador <b>Java</b> con foco en backend sobre <b>WildFly</b> y <b>Oracle</b>, y experiencia en
+        <b>React</b> para frontend. Me gusta construir soluciones simples, seguras y mantenibles.
+      </p>
+      <div class="btns">
+        <a class="btn" href="https://github.com/FernandoFiore07" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="mailto:tuemail@ejemplo.com">Contactar</a>
+        <a class="btn" href="#proyectos">Ver proyectos</a>
+      </div>
+    </header>
+
+    <section id="skills">
+      <h2>Habilidades</h2>
+      <div class="grid grid-3" style="margin-top:10px">
+        <div class="card">
+          <h3>Backend</h3>
+          <span class="pill">Java 17+</span>
+          <span class="pill">Jakarta EE</span>
+          <span class="pill">JPA / Hibernate</span>
+          <span class="pill">REST APIs</span>
+          <span class="pill">WildFly</span>
+          <span class="pill">Maven / Gradle</span>
+        </div>
+        <div class="card">
+          <h3>Base de datos</h3>
+          <span class="pill">Oracle</span>
+          <span class="pill">SQL</span>
+          <span class="pill">PL/SQL</span>
+          <span class="pill">Diseño de esquema</span>
+          <span class="pill">Índices & tuning</span>
+        </div>
+        <div class="card">
+          <h3>Frontend & Dev</h3>
+          <span class="pill">React</span>
+          <span class="pill">HTML5/CSS3</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">Vite</span>
+          <span class="pill">Git / GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos destacados</h2>
+      <div class="grid grid-2" style="margin-top:10px">
+
+        <article class="card">
+          <h3>gatOS (demo educativa ciberseguridad)</h3>
+          <p class="lead">Juego/mini-prototipo educativo con foco en phishing, contraseñas y firewall. (WIP)</p>
+          <div class="pill">Game Design</div><div class="pill">Godot/Pixel Studio</div><div class="pill">Figma</div>
+          <div class="btns">
+            <a class="btn" href="https://github.com/FernandoFiore07" target="_blank" rel="noopener">Repo</a>
+          </div>
+        </article>
+
+      
+
+      </div>
+    </section>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Fernando Fiore — <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
